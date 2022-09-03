@@ -1,0 +1,255 @@
+<DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+  <style type="">
+    p{
+      text-align: center;
+      font-size:25px;
+    }
+    h1{
+    text-align:center;
+    color:white;
+    padding:12px;
+
+    }
+    .dropdown{
+      margin-right: 10px;
+    }
+    .symptomsarea{
+    margin-top:0;
+    margin-left:50px;
+    }
+    .btn{
+    text-align: center;
+    background: #f1f1f1;
+    padding:10px;
+<!--    margin-top:900px-->
+    font-size:35px;
+    font-weight:bold;
+    width:200px;
+    margin-left :850px;
+
+    }
+
+    select{  width: 36%;
+  padding: 10px;
+  margin: 5px 0 20px 105vh;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+
+    }
+.bg-image {
+  /* The image used */
+  background-image: url("https://t4.ftcdn.net/jpg/04/06/19/29/240_F_406192906_sQgLuU4z1FsILvVlQR5GQHXk8xf4ItK1.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:1300;
+}
+b{
+font-size:30px;
+color:white;
+}
+  </style>
+
+<div class="dropdown">
+      <form action = "{{url_for('display')}}" method = "POST">
+
+<div class="bg-image">
+    <h1>Let's Care for those who have four feet. </h1>
+      <p><b>Name: </b>   <input name="ownername" class="w3-input w3-border" type="text" placeholder="Your Name">
+          <b>  Pet Name: </b>   <input class="w3-input w3-border" type="text" placeholder="Pet Name" name="petname"></p>
+          <div class="symptomsarea">
+         <select name = "sym1">
+            <option value = "" selected>Choose Symptom</option>
+                <option value = "dull and depressed">Dull and depressed</option>
+                <option value = "reduced milk yield">Reduced milk yield</option>
+                <option value = "frothing at mouth">Frothing at mouth</option>
+                <option value = "diarrhoea often with blood">Diarrhoea often with blood</option>
+                <option value = "difficulty breathing">Difficulty breathing</option>
+            <option value = "Inability to eat or drink">Inability to eat or drink</option>
+             <option value = "fever">Fever</option>
+             <option value = "depression">Depression</option>
+             <option value = "stillborn">Stillborn</option>
+             <option value = "scab formation">Scab formation</option>
+             <option value = "excessive panting">Excessive panting</option>
+             <option value = "lethargy">Lethargy</option>
+             <option value = "change in appetite">Change in appetite</option>
+             <option value = "lumps">Lumps</option>
+             <option value = "poor coat condition">Poor coat condition</option>
+             <option value = "sneezing">Sneezing</option>
+            <option value = "listlessness">Listlessness</option>
+            <option value = "hyperexcitement">Hyperexcitement</option>
+
+         </select>
+
+        <select name = "sym2">
+            <option value = "Choose symtoms" selected>Choose Symptom</option>
+                <option value = "isolation from herd">Isolation from herd</option>
+                <option value = "staggers">Staggers</option>
+                <option value = "severe lameness">Severe lameness</option>
+                <option value = "coughing">Coughing</option>
+                <option value = "abdominal pain">Abdominal pain</option>
+                <option value = "blisters on mouth and on feet">Blisters on mouth and on feet</o
+                <option value = "lethargy">Lethargy</option>
+                <option value = "weight loss">Weight loss</option>
+                <option value = "weak calf born">Weak calf born</option>
+                <option value = "bloody diarrhoea">Bloody diarrhoea</option>
+                <option value = "swelling of head and neck">Swelling of head and neck</option>
+                <option value = "persistent diarrhoea">Persistent diarrhoea</option>
+                <option value = "drooling">Drooling</option>
+                <option value = "muscle weakness">Muscle weakness</option>
+                <option value = "lethargy">Lethargy</option>
+                <!--<option value = "coughing">coughing</option>-->
+                <option value = "pain">Pain</option>
+                <option value = "increased urination">Increased urination</option>
+                <option value = "excessive thirst">Excessive thirst</option>
+                <option value = "swelling">Swelling</option>
+                <option value = "red eyes">Red eyes</option>
+                <option value = "difficulty breathing">Difficulty breathing</option>
+                <option value = "swelling of lymph glands">Swelling of lymph glands</option>
+                <!--<option value = "anemia">anemia</option>-->
+                <option value = "abcesses">Abcesses</option>
+                <option value = "congestion">Congestion</option>
+                <option value = "anemia">Anemia</option>
+                <option value = "blood-tinged stools">Blood-tinged stools</option>
+                <option value = "retraction of the head">Retraction of the head</option>
+
+
+         </select>
+
+         <select name = "sym3">
+            <option value = "Data Structures" selected>Choose Symptom</option>
+
+                <option value = "high temperature">High temperature</option>
+                <option value = "diarrhea">Diarrhea</option>
+                <option value = "depressed">Depressed</option>
+                <option value = "exitable">Exitable</option>
+                <option value = "anorexia">Anxitey</option>
+                <option value = "reduced appetite">Reduced appetite</option>
+                <option value = "weight loss">Weight loss</option>
+                <option value = " swollen tongue"> Swollen tongue</option>
+                <option value = "decreased fertility">Decreased fertility</option>
+                <option value = "dehydration">Dehydration</option>
+                <!--<option value = "diarrhea">diarrhea</option>-->
+                <option value = "retention of fetal membranes">Retention of fetal membranes</option>
+                <option value = "high temperature">High temperature</option>
+                <option value = "lameness">Lameness</option>
+                <!--<option value = "weight loss">weight loss</option>-->
+                <option value = "snotty nose">Snotty nose</option>
+                <!--<option value = "diarrhea">diarrhea</option>
+                <option value = "weight loss">weight loss</option>-->
+                <option value = "lethargy">Lethargy</option>
+                <!--<option value = "diarrhea">diarrhea</option>
+                <option value = "weight loss">weight loss</option>-->
+                <option value = "tingling">Tingling</option>
+                <!--<option value = "weight loss">weight loss</option>-->
+                <option value = "Increased urination">Increased urination</option>
+                <option value = "bad breath">Bad breath</option>
+                <option value = "swollen lymph nodes">Swollen lymph nodes</option>
+                <option value = "low energy">Low energy</option>
+                <option value = "yellowed eyes">Yellowed eyes</option>
+                <option value = "poor appetite">Poor appetite</option>
+                <option value = "seizures">Seizures</option>
+                <option value = "runny nose">Runny nose</option>
+                <!--<option value = "diarrhea">diarrhea</option>
+                <option value = "diarrhea">diarrhea</option>-->
+                <option value = "inco-ordination of gait">Incoordination of gait</option>
+
+         </select>
+
+
+         <select name = "sym4">
+            <option value = "Data Structures" selected>Choose Symptom</option>
+            <option value = "nasal discharge">Nasal discharge</option>
+                <option value = "reduced fertility">Reduced fertility</option>
+                <option value = "salivation">Salivation</option>
+                <option value = "apparent blindness">Apparent blindness</option>
+                <option value = "reduced milk yield">Reduced milk yield</option>
+                <option value = "collapse">Collapse</option>
+                <option value = "lower milk yield">Lower milk yield</option>
+                <option value = "lameness">Lameness</option>
+                <option value = "ulcers on tongue">Ulcers on tongue</option>
+                <option value = "ulcers">Ulcers</option>
+                <option value = "dysentery">Dysentery</option>
+                <option value = "Infection in the membranes">Infection in the membranes</option>
+                <option value = "weakening">Weakening</option>
+                <option value = "drooling">Drooling</option>
+                <option value = "loss of condition">Loss of condition</option>
+                <option value = "runny eyes">Runny eyes</option>
+                <option value = "pneumonia-like signs">Pneumonia-like signs</option>
+                <option value = "anxiousness">Anxiousness</option>
+               <!-- <option value = "vomiting">vomiting</option>-->
+                <option value = "vomiting">Vomiting</option>
+                <option value = "respiratory problems">Respiratory problems</option>
+                <option value = "hyperactivity">Hyperactivity</option>
+               <!-- <option value = "vomiting">vomiting</option>
+                <option value = "vomiting">vomiting</option>-->
+                <option value = "listlessness">Listlessness</option>
+                <!--<option value = "vomiting">vomiting</option>-->
+                <option value = "swollen lymph nodes">Swollen lymph nodes</option>
+                <option value = "fatigue">Fatigue</option>
+                <option value = "Inflammation of the gums">Inflammation of the gums</option>
+                <option value = "reproductive problems">Reproductive problems</option>
+                <option value = "cough">Cough</option>
+                <option value = "trouble breathing">Trouble breathing</option>
+                <option value = "distended abdomen">Distended abdomen</option>
+                <option value = "convulsions">Convulsions</option>
+         </select>
+
+         <select name = "sym5">
+            <option value = "Data Structures" selected>Choose Symptom</option>
+            <option value = "reduced food intake">Reduced food intake</option>
+            <option value = "condenmation of liver">Condenmation of liver</option>
+                <option value = "loss of appetite">Loss of appetite</option>
+                <option value = "occassionally diarhhea">Occassionally diarhhea</option>
+                <option value = "swelling of interdigital space">Swelling of interdigital space</option>
+                <option value = "frothing at mouth">Frothing at mouth</option>
+                <option value = "dark red urine">Dark red urine</option>
+                <option value = "rapid loss of condition">Rapid loss of condition</option>
+                <option value = "Inappetance">Inappetance</option>
+                <option value = "swollen testicles in bulls">Swollen testicles in bulls</option>
+                <option value = "high morality rate">High morality rate</option>
+                <option value = "loss of fertility">Loss of fertility</option>
+                <option value = "seizures">Seizures</option>
+                <option value = "lethargy">Lethargy</option>
+                <option value = "abnormal gum color">Abnormal gum color</option>
+                <option value = "abdominal pain">Abdominal pain</option>
+                <option value = "dehydration">Dehydration</option>
+                <option value = "heart disease">Heart disease</option>
+                <option value = "burning at the wound">Burning at the wound</option>
+                <option value = "fruity breath">Fruity breath</option>
+                <option value = "difficulty breathing">Difficulty breathing</option>
+                <option value = "skin redness">Skin redness</option>
+                <option value = "changes in behavior">Changes in behavior</option>
+                <option value = "rapid breathing">Rapid breathing</option>
+                <option value = "bloody stool">Bloody stool</option>
+                <option value = "bottle jaw">Bottle jaw</option>
+                <option value = "loss of urination">Loss of urination</option>
+         </select>
+<br>
+              <br>
+<input type = "submit" value = "Predict" class="btn"/>
+          </div>
+</div>
+      </form>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
+</DOCTYPE>

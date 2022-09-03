@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>database</title>
+<style>
+    div{
+<!--    height: 500px;-->
+<!--    width: 500px;-->
+<!--    margin: auto;-->
+    color: #fff;
+    }
+
+    table{
+<!--    width: 900px;-->
+    margin: auto;
+    margin-top: 30px;
+    border: solid black;
+    }
+    td{
+    padding:3px;
+<!--    text-align:center;-->
+    color:black;
+    font-size:20px;
+
+    }
+    body{
+    background-image : url(https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=1060&t=st=1659465753~exp=1659466353~hmac=481b67b96b7dcbf3b305f985b3a0643b8aedc2cab2b70082f230f3d9be605865);
+    background-repeat:no-repeat;
+      background-size: cover;
+    }
+    th{
+    font-size:30px;
+    color:#B93160;
+    border: solid black;
+    @media
+    }
+</style>
+
+</head>
+<body >
+<div>
+<table border= 1>
+    <thead><tr>
+        <th>Owner Name</th>
+        <th>Pet Name</th>
+        <th>Symptom</th>
+        <th>Symptom</th>
+        <th>Symptom</th>
+        <th>Symptom</th>
+        <th>Symptom</th>
+        <th>Disease</th>
+    </tr></thead>
+  {% for user in user_details %}
+
+  <tr>
+    <td><b>{{ user[0] }}</b></td>
+    <td><b>{{ user[1] }}</b></td>
+
+    <td><b>{{ user[2] }}</b></td>
+    <td><b>{{ user[3] }}</b></td>
+
+    <td><b>{{ user[4] }}</b></td>
+    <td><b>{{ user[5] }}</b></td>
+
+    <td><b>{{ user[6] }}</b></td>
+    <td><b>{{ user[7] }}</b></td>
+  </tr>
+  {% endfor %}
+
+</table>
+</div>
+
+</body>
+</html>
